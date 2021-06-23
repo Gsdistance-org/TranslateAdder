@@ -36,8 +36,24 @@ namespace TranslateAdder
             else
             {
                 File.WriteAllText(@".\" + @"TranslaterLangs" + @"\" + inputlang + "-" + outputlang + @"\" + name + @".translate", filein);
+                this.richTextBox1.Clear();
+                this.richTextBox2.Clear();
                 MessageBox.Show("Added file!");
             }
+        }
+
+        private void clearBoxesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.richTextBox1.Clear();
+            this.richTextBox2.Clear();
+        }
+
+        private void clearEverythingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.richTextBox1.Clear();
+            this.richTextBox2.Clear();
+            this.comboBox1.Text = "";
+            this.comboBox2.Text = "";
         }
     }
 }

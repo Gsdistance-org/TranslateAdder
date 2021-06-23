@@ -36,7 +36,13 @@ namespace TranslateAdder
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearBoxesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearEverythingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -57,7 +63,7 @@ namespace TranslateAdder
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 160);
+            this.button1.Location = new System.Drawing.Point(224, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -90,12 +96,53 @@ namespace TranslateAdder
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TranslateAdder.Properties.Resources.translatelogo;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 333);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.viewToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(371, 28);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearBoxesToolStripMenuItem,
+            this.clearEverythingToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // clearBoxesToolStripMenuItem
+            // 
+            this.clearBoxesToolStripMenuItem.Name = "clearBoxesToolStripMenuItem";
+            this.clearBoxesToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.clearBoxesToolStripMenuItem.Text = "Clear boxes";
+            this.clearBoxesToolStripMenuItem.Click += new System.EventHandler(this.clearBoxesToolStripMenuItem_Click);
+            // 
+            // clearEverythingToolStripMenuItem
+            // 
+            this.clearEverythingToolStripMenuItem.Name = "clearEverythingToolStripMenuItem";
+            this.clearEverythingToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.clearEverythingToolStripMenuItem.Text = "Clear everything";
+            this.clearEverythingToolStripMenuItem.Click += new System.EventHandler(this.clearEverythingToolStripMenuItem_Click);
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.viewToolStripMenuItem.Text = "View";
             // 
             // Adder
             // 
@@ -108,13 +155,18 @@ namespace TranslateAdder
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Adder";
             this.Text = "Ex Ex Platform Binary";
             this.Load += new System.EventHandler(this.Adder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,6 +178,11 @@ namespace TranslateAdder
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearBoxesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearEverythingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
     }
 }
 
