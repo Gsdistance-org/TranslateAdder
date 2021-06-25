@@ -41,6 +41,8 @@ namespace TranslateAdder
             this.clearBoxesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearEverythingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.usePathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +121,8 @@ namespace TranslateAdder
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clearBoxesToolStripMenuItem,
-            this.clearEverythingToolStripMenuItem});
+            this.clearEverythingToolStripMenuItem,
+            this.usePathToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
@@ -127,14 +130,14 @@ namespace TranslateAdder
             // clearBoxesToolStripMenuItem
             // 
             this.clearBoxesToolStripMenuItem.Name = "clearBoxesToolStripMenuItem";
-            this.clearBoxesToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.clearBoxesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.clearBoxesToolStripMenuItem.Text = "Clear boxes";
             this.clearBoxesToolStripMenuItem.Click += new System.EventHandler(this.clearBoxesToolStripMenuItem_Click);
             // 
             // clearEverythingToolStripMenuItem
             // 
             this.clearEverythingToolStripMenuItem.Name = "clearEverythingToolStripMenuItem";
-            this.clearEverythingToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.clearEverythingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.clearEverythingToolStripMenuItem.Text = "Clear everything";
             this.clearEverythingToolStripMenuItem.Click += new System.EventHandler(this.clearEverythingToolStripMenuItem_Click);
             // 
@@ -144,11 +147,28 @@ namespace TranslateAdder
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.viewToolStripMenuItem.Text = "View";
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(182, 333);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(189, 46);
+            this.richTextBox3.TabIndex = 7;
+            this.richTextBox3.Text = "";
+            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
+            // 
+            // usePathToolStripMenuItem
+            // 
+            this.usePathToolStripMenuItem.Name = "usePathToolStripMenuItem";
+            this.usePathToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.usePathToolStripMenuItem.Text = "Enable path";
+            this.usePathToolStripMenuItem.Click += new System.EventHandler(this.usePathToolStripMenuItem_Click);
+            // 
             // Adder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 377);
+            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -183,6 +203,8 @@ namespace TranslateAdder
         private System.Windows.Forms.ToolStripMenuItem clearBoxesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearEverythingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.ToolStripMenuItem usePathToolStripMenuItem;
     }
 }
 
